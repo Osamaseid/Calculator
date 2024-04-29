@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link href="../dist/main.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200">
+    <div class="max-w-2xl mx-auto h-64 px-4 py-8 text-white">
+      <div class="grid grid-cols-4 mb-4 h-96">
+        <div
+          class="col-span-3 p-2 border border-gray-300 bg-white text-black text-left text-2xl"
+          id="result"
+        >
+          0
+        </div>
+        <div
+          class="button bg-teal-700 p-2 text-center text-2xl"
+          onclick="clearResult()"
+        >
+          AC
+        </div>
+
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('9')"
+        >
+          9
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('8')"
+        >
+          8
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('7')"
+        >
+          7
+        </div>
+
+        <div
+          class="button bg-gray-700 p-2 text-center text-2xl"
+          onclick="appendCharacter('+')"
+        >
+          +
+        </div>
+
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('4')"
+        >
+          4
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('5')"
+        >
+          5
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('6')"
+        >
+          6
+        </div>
+
+        <div
+          class="button bg-gray-700 p-2 text-center text-2xl"
+          onclick="appendCharacter('-')"
+        >
+          -
+        </div>
+
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('1')"
+        >
+          1
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('2')"
+        >
+          2
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('3')"
+        >
+          3
+        </div>
+        <div
+          class="button bg-gray-700 p-2 text-center text-2xl"
+          onclick="appendCharacter('/')"
+        >
+          /
+        </div>
+
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('.')"
+        >
+          .
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="appendCharacter('0')"
+        >
+          0
+        </div>
+        <div
+          class="button bg-gray-800 p-2 text-center text-2xl"
+          onclick="calculateResult()"
+        >
+          =
+        </div>
+        <div
+          class="button bg-gray-700 p-2 text-center text-2xl"
+          onclick="appendCharacter('*')"
+        >
+          *
+        </div>
+      </div>
+    </div>
+    <script src="../dist/index.js"></script>
+  </body>
+</html>
